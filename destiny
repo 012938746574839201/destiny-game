@@ -1,0 +1,48 @@
+import random
+
+happiness = 5
+
+UserChoice = 'k'
+
+def Eating():
+  'a' 
+  
+def rides():
+  'a'
+
+print("press 'c' to continue diologue")
+
+print(input("yo whats good bro took you a while to get here you gonna have to get your tickets over there ok!"))
+
+print("ok see you in a sec")
+
+player_name = input("welcome to the carnival whats your name: ") 
+
+print("\n ok great", player_name, "welcome to this carnival we have rides to the left and and food to the rights and with you deposite of $20 you will get 40 tickets have fun and enjoy your time with us")
+
+rules = """
+************************************************************
+*                happines levle = 5                        *
+*    your goal is to not get lower than 0                  *
+* each choice you make encreases or decreases you happines *
+************************************************************
+""";
+print(rules);
+
+info = input("if you understand press 'C' to continue if you want more info press 'M' for more info\n")
+
+if(info.lower() == 'm'):
+  print("the game will ask you choices while your character is in the carnival it can range from a simple question like would you like to eat to a more complex question like wich ride you want to go on and depending on your choices your happines levle will eather go up or down if it goes under 0 you loose but if you can keep your score above 0 you will win")
+
+gohome = input("\n yo whats good guys im back i got 40 tickets what you tranna do? or do you just want to 'g' go home or 'n' no ")
+
+if gohome == 'n':
+  UserChoice = input("\n ok so you dont want to go home we have 'R' rides and 'F' food what do you want to do? ")
+  while gohome == 'g':
+    print("ok we could play another day bye",player_name )
+    break;  
+
+if UserChoice == 'r':
+  input("what ride you want to go on 's' screamer")
+
+
