@@ -1,0 +1,37 @@
+print(rules);
+
+info = input("if you understand press 'C' to continue if you want more info press 'M' for more info\n")
+
+if(info.lower() == 'm'):
+  print("the game will ask you choices while your character is in the carnival it can range from a simple question like would you like to eat to a more complex question like wich ride you want to go on and depending on your choices your happines levle will eather go up or down if it goes under 0 you loose but if you can keep your score above 0 you will win")
+
+gohome = input("\n yo whats good guys im back i got 40 tickets what you tranna do? or do you just want to 'g' go home or 'n' no ")
+
+if gohome == 'n':
+  rides = input("\n ok so you dont want to go home we have 'R' rides or? ")
+  Eating = input("'F' to eat food what do you want to do? ")
+  while gohome == 'g':
+    print("ok we could play another day bye",player_name )
+    print("you score ended up being", happiness,)
+    break;  
+
+if rides == 'r':
+  UserChoice = input("what ride you want to go on 's' screamer, 'F' Ferris Wheel,  'B' Bumper Cars, 'R' The Rollercoaster, 'S' land slide ")
+elif Eating == 'f': 
+    input("o.k you want to eat so early its ok by me what you wanna eat? 'D' hotdog, 'H' hamburger, 'T' tacos, 'I' icecream, 'C' chunchulo ")
+
+if UserChoice == 's':
+    happiness = happiness + 1
+    print("good choice your happines is now ", happiness,)
+elif UserChoice  == 'f':
+    happiness = happiness - 1
+    print("i mean it was ok not that exiting but good your happiness is now", happiness, )
+elif UserChoice  == 'b':
+    happiness = happiness + 2
+    print("that was fun i rilly enjoyd it you happines is now", happiness, )
+elif UserChoice  == 'r':
+    happiness = happiness + 3
+    print("bro i almost vomited that was rilly fun. your happines is now", happiness, )
+elif UserChoice  == 's':
+    happiness = happiness + 1.5
+    print("that was fun it wasnt as scary as i thought it was tho :( this is you happiness", happiness, )
